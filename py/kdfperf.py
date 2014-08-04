@@ -42,8 +42,6 @@ for test_name in test_names:
     print "\n\n" + test_name
     stmt = open(test_name).read()
 
-    print "code:", stmt
-
     if "hkdf" in test_name:
         for hash_alg in ["SHA256"]:
             print "with hash alg: ", hash_alg

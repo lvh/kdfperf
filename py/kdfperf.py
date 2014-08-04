@@ -38,7 +38,7 @@ def run_and_report(stmt, setup):
     print "results: {!r}".format(result)
     print "best result: {!r}".format(min(result))
 
-for test_name in test_names:
+for test_name in sorted(test_names):
     print "\n\n" + test_name
     stmt = open(test_name).read()
 

@@ -1,5 +1,10 @@
 import glob
 import timeit
+import platform
+
+print platform.python_implementation(), platform.python_version()
+print platform.uname()
+
 
 test_names = [filename for filename in glob.glob("*.py")
               if filename != "kdfperf.py"]

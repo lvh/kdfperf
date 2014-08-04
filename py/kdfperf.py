@@ -1,5 +1,4 @@
 import glob
-import itertools
 import timeit
 
 test_names = [filename for filename in glob.glob("*.py")

@@ -1,0 +1,12 @@
+h = blake2b(INSTANCE_KEY,
+            digest_size=ENC_KEY_SIZE,
+            salt=SALT,
+            key=MASTER_KEY,
+            person=b'enc')
+enc_key = h.digest()
+h = blake2b(INSTANCE_KEY,
+            digest_size=INDEX_SIZE,
+            salt=SALT,
+            key=MASTER_KEY,
+            person=b'index')
+index = h.digest()

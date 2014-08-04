@@ -30,7 +30,7 @@ from cryptography.hazmat.primitives.kdf.hkdf import HKDF
 from cryptography.hazmat.primitives.hashes import {} as hash_alg
 """
 
-N_ITER = 10000
+N_ITER = 50000
 print "iterations per test: {!r}".format(N_ITER)
 
 def run_and_report(stmt, setup):
